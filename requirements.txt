@@ -9,5 +9,6 @@ google-auth
 google-auth-oauthlib
 google-auth-httplib2
 bcrypt
+joblib
 requests
 python-dotenv
