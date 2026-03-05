@@ -1,0 +1,239 @@
+{
+  "app": {
+    "name": "BudgetBuddy",
+    "tagline": "Type it like you say it. Let BudgetBuddy handle the rest.",
+    "session_active": "Session active ✅",
+    "auto_logout": "Auto-logout in 30 mins",
+    "logout": "🚪 Logout",
+    "session_expired": "⏱️ Session expired. Please login again."
+  },
+  "nav": {
+    "dashboard": "📊 Dashboard",
+    "add_transaction": "💳 Add Transaction",
+    "upload_receipt": "📸 Upload Receipt",
+    "fetch_emails": "📧 Fetch Emails",
+    "view_transactions": "📋 View Transactions",
+    "budget_planning": "📋 Budget Planning",
+    "savings_goals": "🎯 Savings Goals",
+    "financial_insights": "🔍 Financial Insights",
+    "settings": "⚙️ Settings"
+  },
+  "auth": {
+    "login_title": "Welcome Back! 👋",
+    "login_subtitle": "Sign in to continue your financial journey",
+    "register_title": "Create Account 🚀",
+    "register_subtitle": "Join and take control of your finances",
+    "username_label": "Username",
+    "username_placeholder": "Choose a unique username",
+    "username_hint": "ℹ️ 3–20 characters · Only letters, numbers, underscores (_) · Cannot start with a number",
+    "password_label": "Password",
+    "password_placeholder": "Min 8 chars, include a number",
+    "confirm_password_label": "Confirm Password",
+    "confirm_password_placeholder": "Repeat your password",
+    "sign_in_btn": "🔑 Sign In",
+    "create_account_btn": "🚀 Create Account",
+    "back_to_login": "← Back to Login",
+    "no_account": "Don't have an account?",
+    "create_new": "✨ Create New Account",
+    "errors": {
+      "fill_all_fields": "Please fill in all fields.",
+      "username_too_short": "👤 Username must be at least 3 characters long.",
+      "username_too_long": "👤 Username cannot be longer than 20 characters.",
+      "username_invalid_chars": "👤 Only letters, numbers, and underscores (_) allowed.",
+      "username_starts_digit": "👤 Username cannot start with a number.",
+      "password_too_short": "🔑 Password must be at least 8 characters long.",
+      "password_no_digit": "🔢 Password must contain at least one number.",
+      "passwords_no_match": "❌ Passwords do not match.",
+      "username_taken": "❌ Username '{username}' is already taken. Please choose a different one.",
+      "invalid_credentials": "❌ Invalid username or password.",
+      "enter_both": "Please enter both username and password."
+    },
+    "success": {
+      "account_created": "🎉 Account created! Please sign in."
+    }
+  },
+  "hero": {
+    "stats": {
+      "happy_users": "Happy Users",
+      "parse_accuracy": "Parse Accuracy",
+      "transactions": "Transactions Tracked"
+    },
+    "features": {
+      "ai": "🤖 AI-Powered Insights",
+      "receipt": "📱 Smart Receipt Scanning",
+      "security": "🔒 Bank-Level Security"
+    }
+  },
+  "benefits": {
+    "goals": {
+      "icon": "🎯",
+      "title": "Smart Goal Setting",
+      "desc": "Set and track financial goals with intelligent progress insights."
+    },
+    "analytics": {
+      "icon": "📊",
+      "title": "Advanced Analytics",
+      "desc": "Beautiful charts and ML-powered spending predictions."
+    },
+    "ai": {
+      "icon": "🤖",
+      "title": "AI Assistant",
+      "desc": "AI categorizes expenses and gives personalized advice."
+    },
+    "security": {
+      "icon": "🔒",
+      "title": "Secure & Private",
+      "desc": "bcrypt-encrypted passwords. Your data stays yours."
+    }
+  },
+  "dashboard": {
+    "title": "Financial Dashboard",
+    "income": "💵 Income (This Month)",
+    "expenses": "💸 Expenses (This Month)",
+    "net_flow": "📈 Net Cash Flow",
+    "budget_used": "🎯 Budget Used",
+    "budget_not_set": "Not set",
+    "remaining": "{amount} remaining",
+    "budget_progress": "Budget Progress",
+    "spending_by_category": "🥧 Spending by Category",
+    "monthly_net_flow": "📉 Monthly Net Flow",
+    "recent_transactions": "🕑 Recent Transactions ({count} total)",
+    "no_transactions": "🏜️ No transactions yet!",
+    "no_transactions_desc": "Add your first transaction to see your dashboard come alive.",
+    "tips": {
+      "title": "💡 Smart Financial Tips",
+      "critical": "🚨 Spending >90% of income! Cut non-essentials ASAP.",
+      "warning": "⚠️ Spending >70% of income. Try to save more.",
+      "great": "🎉 Saving 20%+ of income. Great discipline!",
+      "advice": "📌 Aim to save at least 20% of your monthly income.",
+      "no_income": "📌 Add some income transactions to see spending ratio tips."
+    }
+  },
+  "add_transaction": {
+    "title": "Add a New Transaction",
+    "input_label": "Describe your transaction",
+    "input_placeholder": "e.g. Spent ₹250 on lunch at Subway",
+    "parse_btn": "🔍 Parse Transaction",
+    "confirm_title": "Confirm Details",
+    "category_label": "Category",
+    "date_label": "Date",
+    "note_label": "Note",
+    "save_btn": "✅ Confirm & Save",
+    "ai_suggested": "🤖 AI suggested: **{category}**",
+    "success": "✅ Saved {type} of {amount} under **{category}**!",
+    "errors": {
+      "empty_input": "Please enter a transaction description.",
+      "parse_failed": "Could not parse. Please include an amount (e.g., ₹250)."
+    }
+  },
+  "upload_receipt": {
+    "title": "Upload Receipt",
+    "upload_label": "Choose an image",
+    "extracted_text": "📄 Extracted Text",
+    "parse_btn": "🔍 Parse Receipt",
+    "save_btn": "💾 Save Transaction",
+    "success": "✅ Transaction saved!",
+    "parse_success": "✅ Receipt parsed!",
+    "parse_failed": "Could not parse. Try a clearer image."
+  },
+  "fetch_emails": {
+    "title": "Fetch Transactions from Gmail",
+    "info": "Scans your Gmail inbox for transaction emails and imports them automatically.",
+    "fetch_btn": "📥 Fetch Now",
+    "success": "✅ Imported {count} new transactions!",
+    "no_found": "No new transactions found."
+  },
+  "view_transactions": {
+    "title": "All Transactions",
+    "filter_from": "From",
+    "filter_to": "To",
+    "filter_category": "Category",
+    "filter_type": "Type",
+    "filter_all": "All",
+    "filter_income": "Income",
+    "filter_expense": "Expense",
+    "search_placeholder": "coffee, amazon…",
+    "showing": "Showing **{shown}** of **{total}** transactions",
+    "export_btn": "⬇️ Export as CSV",
+    "edit_title": "✏️ Edit / Delete Transaction",
+    "update_btn": "💾 Update",
+    "delete_btn": "🗑️ Delete",
+    "confirm_delete": "⚠️ Are you sure?",
+    "yes_delete": "Yes, delete",
+    "cancel": "Cancel",
+    "update_success": "✅ Updated!",
+    "delete_success": "🗑️ Deleted!",
+    "no_transactions": "📭 No transactions found",
+    "no_transactions_desc": "Try adjusting filters or add new transactions.",
+    "col_date": "Date",
+    "col_category": "Category",
+    "col_type": "Type",
+    "col_amount": "Amount (₹)",
+    "col_desc": "Description"
+  },
+  "budget": {
+    "title": "Budget Planning",
+    "set_title": "Set Monthly Budget",
+    "input_label": "Monthly Budget (₹)",
+    "save_btn": "💾 Save Budget",
+    "save_success": "✅ Budget saved!",
+    "progress_title": "Budget Progress",
+    "spent": "{amount} spent",
+    "budget_label": "{amount} budget",
+    "exceeded": "🚨 Budget exceeded!",
+    "approaching": "⚠️ Approaching budget limit.",
+    "within": "✅ Within budget — great job!",
+    "no_budget": "No budget set yet.",
+    "category_spending": "Category-wise Spending"
+  },
+  "savings": {
+    "title": "Savings Goals",
+    "new_goal": "New Goal",
+    "goal_name": "Goal Name",
+    "goal_placeholder": "Vacation Fund",
+    "target_amount": "Target Amount (₹)",
+    "target_date": "Target Date",
+    "set_btn": "🎯 Set Goal",
+    "set_success": "✅ Goal set!",
+    "your_goals": "Your Goals",
+    "saved_info": "💰 Saved: {saved} | 📅 {days} days left",
+    "no_goals": "🎯 No goals yet",
+    "no_goals_desc": "Set your first savings goal on the left!",
+    "errors": {
+      "missing_fields": "Please enter a name and target amount."
+    }
+  },
+  "insights": {
+    "title": "Financial Insights",
+    "by_category": "Spending by Category",
+    "weekly": "Weekly Spending",
+    "prediction_title": "🔮 Next Month Prediction",
+    "predicted": "Predicted Expenses",
+    "hist_avg": "Historical Avg",
+    "delta": "Δ vs Average",
+    "prediction_high": "⚠️ Next month looks significantly more expensive.",
+    "prediction_low": "🎉 Next month looks lighter on expenses!",
+    "monthly_comparison": "📆 Monthly Expense Comparison",
+    "no_data": "📊 No data yet",
+    "no_data_desc": "Add transactions to unlock insights."
+  },
+  "settings": {
+    "title": "Settings",
+    "account_title": "👤 Account",
+    "session_started": "Session started: {time}",
+    "theme_title": "🎨 App Theme",
+    "theme_caption": "Pick a colour theme — it applies instantly across the entire app.",
+    "theme_active": "✓ Active",
+    "theme_select": "Select",
+    "data_title": "📂 Data Management",
+    "export_btn": "⬇️ Export All Data as CSV",
+    "download_btn": "Download CSV",
+    "no_data": "No data to export.",
+    "categories_title": "🏷️ Categories",
+    "notifications_title": "🔔 Notifications",
+    "email_notifications": "Enable Email Notifications",
+    "budget_alerts": "Enable Budget Alert Notifications",
+    "save_btn": "💾 Save Settings",
+    "save_success": "✅ Settings saved!"
+  }
+}
