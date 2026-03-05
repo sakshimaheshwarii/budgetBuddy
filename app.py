@@ -102,7 +102,7 @@ NAV_ITEMS = [
     ("📊 Dashboard",          "Dashboard"),
     ("💳 Add Transaction",    "Add Transaction"),
     ("📸 Upload Receipt",     "Upload Receipt"),
-    ("📧 Fetch Emails",       "Fetch Emails"),
+    # ("📧 Fetch Emails",       "Fetch Emails"),
     ("📋 View Transactions",  "View Transactions"),
     ("📋 Budget Planning",    "Budget Planning"),
     ("🎯 Savings Goals",      "Savings Goals"),
