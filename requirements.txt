@@ -12,3 +12,4 @@ bcrypt
 joblib
 requests
 python-dotenv
+scikit-learn
