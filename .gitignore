@@ -1,3 +1,17 @@
+# Python
 .venv/
 __pycache__/
 *.pyc
+
+# Database
+*.db
+
+# Secrets
+credentials.json
+token.json
+
+# Temp files
+temp_receipt.jpg
+
+# System
+.DS_Store
