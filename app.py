@@ -18,12 +18,13 @@ from ocr import extract_text_from_image
 # ─────────────────────────────────────────────
 # PAGE CONFIG
 # ─────────────────────────────────────────────
+if "sidebar_state" not in st.session_state:
+    st.session_state.sidebar_state = "expanded"
 st.set_page_config(
     page_title="BudgetBuddy",
     page_icon="💰",
     layout="wide",
-    initial_sidebar_state="expanded"
-)
+    initial_sidebar_state=st.session_state.sidebar_state )
 
 # ─────────────────────────────────────────────
 # i18n — load strings from en.json
@@ -480,11 +481,13 @@ with st.sidebar:
         else:
             if st.button(label, key=f"nav_{key}", use_container_width=True):
                 st.session_state.current_page = key
+                st.session_state.sidebar_state = "collapsed"
                 st.session_state.parsed_transaction = None
                 st.session_state.parsed_receipt     = None
                 st.session_state.confirm_delete_id  = None
                 st.rerun()
-
+    if st.session_state.sidebar_state == "collapsed":
+        st.session_state.sidebar_state = "expanded"
     st.markdown("<hr style='border-color:rgba(255,255,255,.15);margin:16px 0'>", unsafe_allow_html=True)
 
     # ── Theme picker ──
@@ -526,6 +529,7 @@ with st.sidebar:
             st.session_state.parsed_transaction = None
             st.session_state.parsed_receipt     = None
             st.session_state.confirm_delete_id  = None
+            st.session_state.sidebar_state = "collapsed"
         st.rerun()
 
     st.markdown(f"<div style='font-size:.68rem;opacity:.45;text-align:center;margin-top:6px'>{t('app.session_active')} · {t('app.auto_logout')}</div>", unsafe_allow_html=True)
